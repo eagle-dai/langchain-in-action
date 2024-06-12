@@ -10,3 +10,5 @@ code/*/*/*/.DS_Store
 venv/
 log/
 checkpoints/
+.env
+*.log
