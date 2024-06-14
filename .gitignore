@@ -12,3 +12,5 @@ log/
 checkpoints/
 .env
 *.log
+.tmp
+.tmp.csv
