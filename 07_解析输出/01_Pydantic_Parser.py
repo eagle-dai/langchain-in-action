@@ -69,10 +69,10 @@ for flower, price in zip(flowers, prices):
 
     # 解析模型的输出
     parsed_output = output_parser.parse(output)
-    parsed_output_dict = parsed_output.dict()  # 将Pydantic格式转换为字典
+    # parsed_output_dict = parsed_output.model_dump()  # 将Pydantic格式转换为字典
 
     # 将解析后的输出添加到DataFrame中
-    df.loc[len(df)] = parsed_output.dict()
+    df.loc[len(df)] = parsed_output.model_dump()
 
 # 打印字典
 print("输出的数据：", df.to_dict(orient='records'))
