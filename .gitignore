@@ -10,7 +10,7 @@ code/*/*/*/.DS_Store
 venv/
 log/
 checkpoints/
-.env
+*.env
 *.log
-.tmp
-.tmp.csv
+*.tmp
+*.tmp.csv
